@@ -15,3 +15,11 @@ Current lab ideas (each li is a separate lab):
 Should each be made into unique folders in this repository, in numbered difficulty (maybe?).
 
 Work on branches, ask before merging into main, and have fun!
+
+Good first steps in this task:
+
+Make the most simplistic,functional base version of the concept you can. 
+
+Style, but remember not to make things too complicated. Avoid frameworks with dense component structure in their application, or peculiar syntaxing. 
+
+Remember the code challenges. These are intended to be a halfway point between the labs and a code challenge, but (hopefully) more enjoyable and fun than the ones we remember doing.
