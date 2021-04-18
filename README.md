@@ -12,7 +12,7 @@ Current lab ideas (each li is a separate lab):
 - Mocked log-in lab (collection of users with passwords, need to connect user-create form and user-login form. States exist as loose guidance for currentUser, allUsers, loggedIn, etc)
 
 
-Should each be made into unique folders in this repository, in numbered difficulty (maybe?).
+Should each be made into unique folders in this repository, in numbered difficulty (maybe?). Each consecutive lab could (and should) include concepts or aspects of concepts covered in previous labs.
 
 Work on branches, ask before merging into main, and have fun!
 
