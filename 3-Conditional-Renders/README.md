@@ -4,8 +4,7 @@
 
 ## Clear, Concise, Coding Checkpoint Concept Clarification (The six C's?)
 
-- Render data conditionally. One (or more) show/hide or other boolean conditional renders.
-
+After completing this lab we should be more familiar with how the lifecycle with React allows conditional rendering, and gain some familiarity with how to have sibling components interact with bubbling data and prop inheritence.
 
 ## Instructions to install/run go here
 
