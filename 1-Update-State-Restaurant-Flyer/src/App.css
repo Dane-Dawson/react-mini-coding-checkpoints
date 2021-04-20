@@ -35,7 +35,6 @@
 }
 
 .logo-container{
-  /* border: 1px solid red; */
   position: relative;
   height: 700px;
   display: flex;
@@ -58,6 +57,7 @@
   min-width: 350px;
   top: 10%;
   z-index: 20;
+  max-width: 25%;
 }
 
 .description p{
@@ -73,7 +73,6 @@ hr{
 }
 
 .review-hour-wrapper{
-  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   height: auto;
@@ -85,15 +84,21 @@ hr{
 }
 
 .info-container{
-  /* border: 1px solid red; */
   width:250px;
   margin: 1%;
+}
+
+.info-container:nth-child(2) p{
+  line-height: 1%;
+}
+
+.info-container:nth-child(2) .open-close{
+  color: #FCB029;
 }
 
 .section{
   background-color: #6B6A6B;
   height: 100%;
-  /* border: 1px solid red; */
 }
 
 .section p{

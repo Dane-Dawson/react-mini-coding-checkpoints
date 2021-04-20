@@ -12,6 +12,13 @@ After finishing this practice we should have an (arguably) practical application
 
 ## Rough draft of actual readme below here
 
+# Notes
+By loading the src using a query string for the logo image:
+```
+<img className="logo" src={`${this.state.logo}?${Time.now()}`} alt="Restaurant"></img>
+```
+we force a re-render of the image. If not, the image would stay the same due to it being cached.
+
 ///////////////////////REAL README STARTS HERE ///////////////////////
 
 # Getting Started with Create React App

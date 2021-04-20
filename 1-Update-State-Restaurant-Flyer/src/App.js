@@ -3,10 +3,13 @@ import React, { Component } from 'react';
 import Dots from "./Components/Dots";
 import TemplateLogo from "./Components/TemplatateLogo"
 
+const RestaurantURL = "https://random-data-api.com/api/restaurant/random_restaurant"
+
 class App extends Component {
   constructor() {
     super()
     this.state = {
+      restaurantId: "",
       name: "-Restaurant Name-",
       type: "-Restaurant type-",
       description: "This is where the restaurant description goes",
@@ -16,43 +19,58 @@ class App extends Component {
       address: "1400 Lavaca St 7th Floor, Austin, TX 78701",
       hours: {
         monday: {
-          opensAt: "7:44 AM",
-          closesAT: "11:52 PM",
-          isClosed: false
+          opens_at: "Opens @",
+          closes_at: "Closes @"
         },
         tuesday: {
-          opensAt: "7:44 AM",
-          closesAT: "11:52 PM",
-          isClosed: false
+          opens_at: "Opens @",
+          closes_at: "Closes @"
         },
         wednesday: {
-          opensAt: "7:44 AM",
-          closesAT: "11:52 PM",
-          isClosed: false
+          opens_at: "Opens @",
+          closes_at: "Closes @"
         },
         thursday: {
-          opensAt: "7:44 AM",
-          closesAT: "11:52 PM",
-          isClosed: false
+          opens_at: "Opens @",
+          closes_at: "Closes @"
         },
         friday: {
-          opensAt: "7:44 AM",
-          closesAT: "11:52 PM",
-          isClosed: false
+          opens_at: "Opens @",
+          closes_at: "Closes @"
         },
         saturday: {
-          opensAt: "",
-          closesAT: "",
-          isClosed: true
+          opens_at: "Opens @",
+          closes_at: "Closes @"
         },
         sunday: {
-          opensAt: "",
-          closesAT: "",
-          isClosed: true
+          opens_at: "Opens @",
+          closes_at: "Closes @"
         },
       }
     }
   }
+
+
+  handleGetRestaurantInfoClick = () => {
+    fetch(RestaurantURL)
+    .then(resp => resp.json())
+    .then(data => this.handleUpdateState(data))
+  }
+
+  handleUpdateState(data){
+    this.setState({
+      restaurantId: data.id,
+      name: data.name,
+      type: data.type,
+      description: data.description,
+      review: data.review,
+      logo: data.logo,
+      phoneNumber: data.phone_number,
+      address: data.address,
+      hours: {...data.hours}
+    })
+  }
+
   render() {
     return (
       <div className="App">
@@ -61,7 +79,7 @@ class App extends Component {
         <TemplateLogo />
         <h2 className="type">The Best {this.state.type}</h2>
         <div className="logo-container">
-          <img className="logo" src={this.state.logo} alt="Restaurant"></img>
+          <img className="logo" src={`${this.state.logo}?${this.state.restaurantId}`} alt="Restaurant"></img> {/* By loading the src using a query string, we force a re-render of the image. If not, the image would stay the same due to it being cached. */}
           <hr />
           <div className="description">
             <p>{this.state.description}</p>
@@ -77,7 +95,20 @@ class App extends Component {
           <div className="info-container">
             <h2>Hours</h2>
             <div className="section">
-              <p>Render restaurant hours here</p>
+              <p>Monday</p>
+              <p className="open-close">{this.state.hours.monday.opens_at} - {this.state.hours.monday.closes_at}</p>
+              <p>Tuesday</p>
+              <p className="open-close">{this.state.hours.monday.opens_at} - {this.state.hours.monday.closes_at}</p>
+              <p>Wednesday</p>
+              <p className="open-close">{this.state.hours.monday.opens_at} - {this.state.hours.monday.closes_at}</p>
+              <p>Thursday</p>
+              <p className="open-close">{this.state.hours.monday.opens_at} - {this.state.hours.monday.closes_at}</p>
+              <p>Friday</p>
+              <p className="open-close">{this.state.hours.monday.opens_at} - {this.state.hours.monday.closes_at}</p>
+              <p>Saturday</p>
+              <p className="open-close">{this.state.hours.saturday.opens_at} - {this.state.hours.saturday.closes_at}</p>
+              <p>Sunday</p>
+              <p className="open-close">{this.state.hours.sunday.opens_at} - {this.state.hours.sunday.closes_at}</p>
             </div>
           </div>
         </div>
@@ -92,7 +123,7 @@ class App extends Component {
           </div>
         </div>
         <Dots />
-        <button className="get-restaurant-button">Get Restaurant Info</button>
+        <button className="get-restaurant-button" onClick={this.handleGetRestaurantInfoClick}>Get Restaurant Info</button>
       </div>
     )
   }
