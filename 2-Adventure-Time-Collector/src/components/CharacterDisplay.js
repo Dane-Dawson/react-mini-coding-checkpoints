@@ -1,20 +1,33 @@
 import React from "react";
 
 class CharacterDisplay extends React.Component {
+  renderQuotes = (quotes) => {
+    return quotes.map((quote) => {
+      <li>{quote}</li>;
+    });
+  };
 
   render() {
     return (
-      <div>
-      Character Display
-      <img src="props" />
-      <h1>Name</h1>
-      <h3>Species</h3>
-      <h3>Gender</h3>
-      <p>Famous quotes:</p>
-      <ul>
-          Quotes
-      </ul>
-     
+      <div className="character-display-div">
+        <img
+          className="display-card-sprite"
+          src={this.props.character.sprite}
+        />
+        <p className="introduction-tag">Introducing:</p>
+
+        <h1 className="display-card-name">{this.props.character.fullName}</h1>
+
+        <p className="the-tag">the</p>
+
+        <h3 className="display-species">{this.props.character.species}</h3>
+        <h3 className="display-gender">{this.props.character.sex}</h3>
+        <p>Famous quotes:</p>
+        <ul>
+          {this.props.character.quotes.map((quote) => (
+            <li>{quote}</li>
+          ))}
+        </ul>
       </div>
     );
   }
