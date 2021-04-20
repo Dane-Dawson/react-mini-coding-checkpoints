@@ -1,0 +1,152 @@
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.logo-img{
+  position: relative;
+  width: 40vw;
+  top: -2vh;
+  left: 58vw;
+}
+.main-app-div{
+  background-image: url(./images/treehousehd.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+}
+
+.character-display-div{
+  /* font-size: 1rem; */
+  position: absolute;
+  background-color: rgba(250, 235, 215, 0.801);
+  width: 48vw;
+  height: 50vh;
+  top: 5vh;
+  left: 1vw;
+  border-radius: 20px;
+  border: 3px solid burlywood;
+  /* opacity: .8; */
+}
+@font-face {
+  font-family: adventureTime;
+  src: url('./fonts/adventure_time_logo-webfont.woff') format('woff'),
+  url('./fonts/adventure_time_logo-webfont.woff2') format('woff2');
+}
+.display-info-container{
+  font-family: adventureTime;
+  position: absolute;
+  right: 1vw;
+  top: 3vh;
+  width: 20vw;
+  text-align: center;
+}
+
+.display-card-sprite {
+  height: 28vh;
+  padding: 0;
+}
+
+.introduction-tag{
+  font-size: 2vh;
+  padding: 0;
+}
+
+.display-card-name{
+  font-size: 3vh;
+  margin-top: 0.25;
+}
+
+.the-tag{
+  font-size: 2vh;
+}
+
+.display-species{
+  font-size: 4vh;
+  margin: 0;
+}
+
+.display-gender{
+  font-size: 2vh;
+  margin-top: 0.1;
+}
+
+.display-quotes{
+
+  font-family: adventureTime;
+  position: absolute;
+  padding: 10px;
+  font-size: 2vh;
+  left: 1vw;
+  top: 5vh;
+  width: 22vw;
+  background-color: rgba(184, 135, 11, 0.221);
+  border-radius: 20px;
+  border-color: 10px solid rgb(245, 211, 127);
+
+}
+
+.character-card-container-div {
+  background-image: url(./images/underground.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100vw;
+  height: 80vh;
+  top: 100%;
+  /* border: 1px solid cadetblue; */
+}
+
+.sprite-grid{
+  position: absolute;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  width: 50vw;
+  right: 10vw;
+  top: 5vh;
+}
+
+.lengthy-description{
+  font-family: adventureTime;
+  text-align: center;
+  /* color: rgb(221, 4, 185); */
+  color: rgb(96, 96, 177);
+  position: absolute;
+  top: 14vh;
+  left: 2vh;
+  width: 35vw;
+  height: 40vh;
+  background-color: rgba(1, 7, 6, 0.63);
+  font-size: 5vh;
+  border-radius: 150px;
+
+}
+.welcome-tag{
+  position: absolute;
+  top: 14vh;
+}
+
+.character-card {
+  width: 25vh;
+
+  background-color: rgba(1, 7, 6, 0.33);
+  /* border: 5px solid rgba(7, 88, 81, 0.63); */
+  border: 5px solid rgba(3, 44, 41, 0.43);
+  border-radius: 100px;
+  padding: 0px;
+ 
+}
+
