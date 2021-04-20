@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.logo-img{
+  position: relative;
+  width: 30vw;
+  top: 2vh;
+  left: 5vw;
+}
+.main-app-div{
+  background-image: url(./images/treehousehd.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+}
+
+.character-display-div{
+  /* font-size: 1rem; */
+  position: absolute;
+  background-color: antiquewhite;
+  width: 55vw;
+  height: 50vh;
+  border-radius: 20px;
+  border: 3px solid burlywood;
+  opacity: .8;
+}
+
+.display-card-sprite {
+  position: absolute;
+  top: 1vh;
+  left: 12vw;
+  height: 20vw;
+  opacity: 1.5;
+}
+
+.introduction-tag{
+  position: absolute;
+  font-size: 2vh;
+  right: 7vw;
+  top: -1vh;
+}
+
+.the-tag{
+  position: absolute;
+  font-size: 2vh;
+  right: 12vw;
+  top: 4vh;
+}
+.display-card-name{
+  font-size: 3vh;
+  position: absolute;
+  right: 5vw;
+  top: 1vh;
+}
+
+.character-card-container-div {
+  background-image: url(./images/underground.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100vw;
+  height: 80vh;
+  top: 100%;
+  border: 10px solid cadetblue;
+}
