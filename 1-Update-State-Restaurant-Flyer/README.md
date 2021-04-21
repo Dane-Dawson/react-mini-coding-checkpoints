@@ -1,93 +1,34 @@
-# NAME OF LAB GOES HERE
+# React State Restaurant Lab 🍟🍗🥓🍔
 
-## Outline of lab in progress, brainstorming, etc go
+## Overview 👀
+To help visualize the flow of data from React state to DOM, we will be working with a class component's constructor to store and update our state. Using the `setState()` function, we can update the state and React will re-render the page using the latest data stored in the state.
 
-Maybe some kind of random api (or can we set up a db.json api randomizer?) to connect to a button fetch? Gif collection, jokes, something like that?
+* Note: We will only be working in the App component and the state within this component.
 
-## Clear, Concise, Coding Checkpoint Concept Clarification (The six C's?)
+## Goals 🎯
+- Render state data inside of JSX curly braces.
+- Utilize the `componentDidUpdate()` function to perform a fetch.
+- Utilize the `setState()` function to update the state.
 
-After finishing this practice we should have an (arguably) practical application of using state to render data dynamically into a React component, as well as connecting an event listener to a button to fetch new information that updates state. With the magic of React, this will trigger a re-render and display our newly fetched data instantly without page refresh.
+## Getting Started 🏃🏽‍♀️
+After cloning the repo, `cd` into it and run `npm install` and `npm start`. Open [http://localhost:3000](http://localhost:3000) and you should see a pretty bare page with some missing information. Back in the React code, open src/App.js and you will find some starter code for the App component. Take a look in the constructor and find the `this.state` declaration for our restaurant object. The state's default restaurant is one of my favorite places in Austin, TX, Donkey Mo's 🤤. We will begin by rendering this data to the DOM using the JSX curly braces in the App component's render function. 
 
-## Instructions to install/run go here
+## Deliverables 🚚
+- Render state data inside of the JSX curly braces. 
+- Fetch new restaurant data on using the `componentDidMount()` function and update the state using setState() to trigger re-render. 
+- Make the "Get Restaurant Info" button perform a fetch when clicked and update state with new restaurant data. 
 
-## Rough draft of actual readme below here
+## Fetch URL 🐕
+This URL `https://random-data-api.com/api/restaurant/random_restaurant` is where our new restaurant data will come from. 
 
-# Notes
-By loading the src using a query string for the logo image:
-```
-<img className="logo" src={`${this.state.logo}?${Time.now()}`} alt="Restaurant"></img>
-```
-we force a re-render of the image. If not, the image would stay the same due to it being cached.
 
-///////////////////////REAL README STARTS HERE ///////////////////////
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
