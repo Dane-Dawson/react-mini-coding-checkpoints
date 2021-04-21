@@ -1,7 +1,6 @@
 import "./App.css";
 import React, { Component } from "react";
 import Dots from "./Components/Dots";
-
 import TemplateLogo from "./Components/TemplatateLogo"
 
 class App extends Component {
@@ -63,9 +62,7 @@ class App extends Component {
 
         <div className="logo-container">
 
-
           <img className="logo" src={`${/* This is where the restaurant logo goes */null}?${/* This is where the restaurant id goes */null}`} alt="Restaurant Logo"></img> 
-
 
           <hr />
           <div className="description">
@@ -123,14 +120,12 @@ class App extends Component {
 
             <img src="https://www.iconsdb.com/icons/preview/gray/phone-68-xxl.png" className="icon" alt="Phone Icon"></img>
 
-
             <p>{/* This is where the restaurant phone number goes */}</p>
 
           </div>
           <div className="info-wrapper">
 
             <img src="https://www.iconsdb.com/icons/preview/gray/pin-5-xxl.png" className="icon" alt="Pin Icon"></img>
-
 
             <p>{/* This is where the restaurant address goes */}</p>
 
@@ -139,7 +134,6 @@ class App extends Component {
         <Dots />
 
         <button className="get-restaurant-button" onClick={null}>Get Restaurant Info</button>
-
 
       </div>
     );

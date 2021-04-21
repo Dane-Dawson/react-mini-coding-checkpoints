@@ -17,6 +17,7 @@
   justify-content: space-around;
   align-items: center;
 }
+
 .dot{ 
   width: 10px;
   height: 10px;
@@ -112,12 +113,12 @@ hr{
   flex-direction: column;
   align-items: center;
   min-height: 200px;
-
 }
+
 .info-wrapper{
   display:flex;
-
 }
+
 .icon{
   height: 30px;
 }
