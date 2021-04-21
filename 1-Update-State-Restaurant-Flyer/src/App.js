@@ -3,16 +3,49 @@ import React, { Component } from 'react';
 import Dots from "./Components/Dots";
 import TemplateLogo from "./Components/TemplatateLogo"
 
-const RestaurantURL = "https://random-data-api.com/api/restaurant/random_restaurant"
-
 class App extends Component {
   constructor() {
     super()
-    this.state = {}
-  }
-
-  handleGetRestaurantInfoClick = () => {
-    // We will need to do something here to get new restaurant data. Note the kind of function we are using here for handling an event.
+    this.state = {
+      id: 0,
+      name: "Donkey Mo's",
+      type: "Korean Fried Chicken",
+      description: "Having worked at the finest restaurants in the country, YoungMin Noh is always seeking the perfect bite and the perfect meal.  A graduate of The Culinary Institute of America in New York, he worked in exclusive kitchens such as Veritas, Modern, and Hanjan.  He and his wife have settled in Austin, TX to pursue his dream of becoming a restaurateur, with an ultimate goal of opening a signature restaurant to help capture his vision with food.",
+      review: "I cannot recommend this place enough. Even though the location at HMart in Cedar Park closed for reasons due to the relationship of DM owners and HMart, it is still worth taking the annoying trip inside of Lakeline mall to taste this amazing food. The Kimchi Fries are insanely good. They are topped with bacon, green onions, Sriracha mayo, and of course, kimchi. They pair well with the Soy garlic chicken tenders. My mouth is watering uncontrollably just writing this. 10 out of 10, you need this in you life like now. Right now. Go.",
+      logo: "https://images.squarespace-cdn.com/content/v1/5c7c910901232c45a119f095/1551684561292-NMYCML8UZCAU77QPYIZS/ke17ZwdGBToddI8pDm48kAS-mQX5EkRHsd9_J4k9yNFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQz9PgSrls-wdiiWtXoSpIubvOIR1xaLCyrVX6N6i3Oo/Screen+Shot+2019-03-03+at+11.10.42+PM.png",
+      phone_number: "(512) 276-2438",
+      address: "11200 Lakeline Mall Dr Ste VC8 - Lakeline Mall Food Court, Cedar Park, TX 78613",
+      hours: {
+        monday: {
+          opens_at: "11 AM",
+          closes_at: "7 PM"
+        },
+        tuesday: {
+          opens_at: "11 AM",
+          closes_at: "7 PM"
+        },
+        wednesday: {
+          opens_at: "11 AM",
+          closes_at: "7 PM"
+        },
+        thursday: {
+          opens_at: "11 AM",
+          closes_at: "7 PM"
+        },
+        friday: {
+          opens_at: "11 AM",
+          closes_at: "8 PM"
+        },
+        saturday: {
+          opens_at: "11 AM",
+          closes_at: "8 PM"
+        },
+        "sunday": {
+          opens_at: "12 AM",
+          closes_at: "6 PM"
+        }
+      }
+    }
   }
 
   render() {
@@ -28,7 +61,7 @@ class App extends Component {
 
         <div className="logo-container">
 
-          <img className="logo" src={this.state.logo ? `${null /* This is where the restaurant logo goes */}?${null /* This is where the restaurant id goes */}` : "https://i.pinimg.com/originals/26/0f/97/260f975bede7d62c1422bb9067be0405.jpg"} alt="Restaurant Logo"></img> 
+          <img className="logo" src={`${/* This is where the restaurant logo goes */null}?${/* This is where the restaurant id goes */null}`} alt="Restaurant Logo"></img> 
 
           <hr />
           <div className="description">
@@ -96,7 +129,7 @@ class App extends Component {
         </div>
         <Dots />
 
-        <button className="get-restaurant-button" onClick={this.handleGetRestaurantInfoClick}>Get Restaurant Info</button>
+        <button className="get-restaurant-button" onClick={null}>Get Restaurant Info</button>
 
       </div>
     )

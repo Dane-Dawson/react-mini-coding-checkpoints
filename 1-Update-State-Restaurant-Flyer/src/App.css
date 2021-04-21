@@ -48,6 +48,7 @@
   padding: .5%;
   top: 10%;
   z-index: 10;
+  max-height: 500px;
 }
 
 .description{
