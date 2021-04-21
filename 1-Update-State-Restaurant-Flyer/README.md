@@ -1,4 +1,43 @@
-# NAME OF LAB GOES HERE
+# Updating State Restaurant Lab
+
+## Overview
+In this first React Mini Coding Checkpoint, we will be updating the state to trigger a re-render. We will be 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Outline of lab in progress, brainstorming, etc go
 
