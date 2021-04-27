@@ -19,21 +19,6 @@ class App extends React.Component {
   };
   // Write your code here below here! You won't need to alter any of the code in state above.
 
-  toggleBunny = () => {
-    this.setState({ showBunny: !this.state.showBunny });
-  };
-  toggleKnife = () => {
-    this.setState({ knifeThrown: !this.state.knifeThrown });
-  };
-  toggleVolunteer = () => {
-    this.setState({ volunteerSelected: !this.state.volunteerSelected });
-  };
-  resetKnifeIllusion = () => {
-    this.setState({
-      knifeThrown: false,
-      volunteerSelected: false,
-    });
-  };
   render() {
     return (
       <div className="app-main-div">
@@ -42,27 +27,20 @@ class App extends React.Component {
           <img src={melvinHimself} className="melvin-himself" alt="Melvin" />
 
           <div className="app-bunny-trick">
-            {/* This is where the bunny toggle will go */}
             <img
-              src={this.state.showBunny ? bunny : hat}
+              src={/* Your conditional will go here */ hat}
               alt="bunny"
               className="bunny-trick"
             />
-            <button className="alakazam" onClick={this.toggleBunny}>
+            <button
+              className="alakazam"
+              onClick={null /* toggleBunny goes here */}
+            >
               Alakazam!
             </button>
           </div>
-          <IllusionControls
-            resetTrick={this.resetKnifeIllusion}
-            toggleKnife={this.toggleKnife}
-            toggleVolunteer={this.toggleVolunteer}
-            knife={this.state.knifeThrown}
-            volunteer={this.state.volunteerSelected}
-          />
-          <KnifeIllusion
-            knife={this.state.knifeThrown}
-            volunteer={this.state.volunteerSelected}
-          />
+          <IllusionControls />
+          <KnifeIllusion />
         </div>
       </div>
     );

@@ -5,21 +5,21 @@ function IllusionControls(props) {
     <div className="illusion-controls-main-div">
       <button
         className="find-volunteer"
-        onClick={props.volunteer ? null : props.toggleVolunteer}
+        onClick={null /* You'll want something here */}
       >
-        {props.volunteer ? "Volunteer chosen" : "Pick a volunteer"}
+        Pick a volunteer
       </button>
 
 
       <button
         className="throw-knife"
-        onClick={props.knife ? null : props.toggleKnife}
+        onClick={null /* You'll want something here */ }
       >
-        {props.knife ? "Knife thrown" : "Throw knife"}
+        Throw knife
       </button>
 
 
-      <button className="reset" onClick={props.resetTrick}>
+      <button className="reset" onClick={null /* You'll want something here for bonus goals */}>
         Reset illusion
       </button>
 

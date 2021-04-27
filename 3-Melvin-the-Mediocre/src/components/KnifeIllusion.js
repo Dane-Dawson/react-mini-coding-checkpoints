@@ -14,8 +14,10 @@ class KnifeIllusion extends React.Component {
   render() {
     return (
       <div className="knife-illusion-main-div">
-        <img src={this.props.volunteer? (this.props.knife? UhOhBuster : ReadyBuster) : null} className="brave-volunteer" />
-        <img src={this.props.knife ? ThrowingMachete : Nothing} className="throwing-machete" />
+
+        <img src={/* This is the volunteer image */ Nothing} className="brave-volunteer" />
+        <img src={/* This is the knife image */ Nothing} className="throwing-machete" />
+        
         <img src={VolunteerStand} className="volunteer-stand" />
 
       </div>
