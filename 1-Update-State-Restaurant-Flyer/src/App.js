@@ -2,6 +2,8 @@ import "./App.css";
 import React, { Component } from "react";
 import Dots from "./Components/Dots";
 import TemplateLogo from "./Components/TemplatateLogo"
+import Pin from "./Assets/pin.png"
+import Phone from "./Assets/phone.png"
 
 class App extends Component {
   constructor() {
@@ -118,14 +120,14 @@ class App extends Component {
         <div className="contact-info-wrapper">
           <div className="info-wrapper">
 
-            <img src="https://www.iconsdb.com/icons/preview/gray/phone-68-xxl.png" className="icon" alt="Phone Icon"></img>
+            <img src={Phone} className="icon" alt="Phone Icon" />
 
             <p>{/* This is where the restaurant phone number goes */}</p>
 
           </div>
           <div className="info-wrapper">
 
-            <img src="https://www.iconsdb.com/icons/preview/gray/pin-5-xxl.png" className="icon" alt="Pin Icon"></img>
+            <img src={Pin} className="icon" alt="Pin Icon" />
 
             <p>{/* This is where the restaurant address goes */}</p>
 
