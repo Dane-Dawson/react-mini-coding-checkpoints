@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: #090C12;
+}
+
+.logo-container {
+  /* border: 2px solid red; */
+  position: absolute;
+  top: 2%;
+  height: 30vh;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 100%;
+}
+
+.ReacTarot {
+  /* border: 2px solid blue; */
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarot-table-wrapper {
+  /* border: 2px solid yellow; */
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  height: 85%;
+  min-height: 400px;
+}
+
+.tarot-table {
+  height: 100%;
+  align-self: flex-end;
+}
+
+.card-container {
+  position: absolute;
+  /* border: 2px solid rgb(0, 255, 34); */
+  height: 70%;
+  min-height: 375px;
+  width: 85vh;
+  min-width: 600px;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  flex-grow: 1;
+  color: #2E1441;
+  margin-bottom: 1%;
+}
+
+.card-wrapper {
+  /* border: 1px solid red; */
+}
+
+.card {
+  background-image: url("https://64.media.tumblr.com/88cd3034cd28676a214ae40f93a1896d/tumblr_o0nfwjRmB51tzjajqo1_1280.jpg");
+  background-size: cover;
+  font-size: .01em;
+  background-color: #ffffffd0;
+  border: 1px solid grey;
+  margin: .16vw;
+  width: 40px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5%;
+}
+
+.display-console-wrapper {
+  /* border: 2px solid red; */
+  position: absolute;
+  left: 10vh;
+  height: 95%;
+  width: 20%;
+  color: #E9C236;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.display-card-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.display-card{
+  /* border: 5px solid greenyellow; */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-card-info {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* border: 1px solid #E9C236; */
+  position: absolute;
+  bottom: 0;
+  overflow-y: scroll;
+  height: 20%;
+  line-height: 1.5em;
+  font-size: 1em;
+}
+
+.display-card-img {
+  position: absolute;
+  top: 2%;
+  height: 75%;
+  border-radius: 5%;
+}
+
+.sort-filter-wrapper {
+  font-family: Luminari, Fantasy, Sans-serif, Monospace, Cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2% 0px 2% 0px;
+}
+
+.sort-filter {
+  margin: 2% 0px 2% 0px;
+  width: 100%;
+}
+
+select{
+  color: #E9C236;
+  background-color: #090C12;
+  width: 100%;
+}
+
+.shuffle-button-wrapper {
+  height: 8%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-family: Luminari, Fantasy, Sans-serif, Monospace, Cursive;
+  color: #E9C236;
+  background-color: #0288AB;
+  border: 1px solid #E9C236;
+  width: 100%;
+}
+
+.forecast-container{
+  font-family: Luminari, Fantasy, Sans-serif, Monospace, Cursive;
+  position: absolute;
+  right: 10vh;
+  height: 95%;
+  width: 20%;
+  color: #E9C236;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.forecast-card-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 35%;
+}
+
+.forecast-card{
+  position: relative;
+  text-align: center;
+  color: black;
+  height: 80%;
+  width: 50%;
+}
+
+.forecast-card h3{
+  position: absolute;
+  bottom: 2%;
+}
+
+.forecast-card-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}

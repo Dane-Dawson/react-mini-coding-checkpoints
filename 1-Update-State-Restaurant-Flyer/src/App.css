@@ -1,0 +1,130 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.App {
+  background-color: #211C1B;
+  height: auto;
+  color: #FFFFFF; 
+  text-align: center;
+}
+
+.dots-container{
+  padding: 5%;
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dot{ 
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+.template-logo-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.template-logo{
+  height: 20vh;
+}
+
+.logo-container{
+  position: relative;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  position: absolute;
+  border: 5px solid #908D8A;
+  padding: .5%;
+  top: 10%;
+  z-index: 10;
+  max-height: 500px;
+}
+
+.description{
+  background-color: #211c1bb2;
+  position: absolute;
+  height: auto;
+  min-width: 350px;
+  top: 10%;
+  z-index: 20;
+  max-width: 25%;
+}
+
+.description p{
+  margin: 5%;
+  text-align: left;
+}
+
+hr{
+  color: #6B6A6B;
+  position: absolute;
+  bottom: 5%;
+  width: 500px;
+}
+
+.review-hour-wrapper{
+  display: flex;
+  justify-content: center;
+  height: auto;
+  padding-bottom: 5%;
+}
+
+.review-hour-wrapper h2{
+  padding: 5%;
+}
+
+.info-container{
+  width:250px;
+  margin: 1%;
+}
+
+.info-container:nth-child(2) p{
+  line-height: 1%;
+}
+
+.info-container:nth-child(2) .open-close{
+  color: #FCB029;
+}
+
+.section{
+  background-color: #6B6A6B;
+  height: 100%;
+}
+
+.section p{
+  padding: 5%;
+}
+
+.contact-info-wrapper{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200px;
+}
+
+.info-wrapper{
+  display:flex;
+}
+
+.icon{
+  height: 30px;
+}
+
+.get-restaurant-button{
+  background-color: #F75252;
+  margin-bottom: 3.5em;
+  padding: 2em;
+}

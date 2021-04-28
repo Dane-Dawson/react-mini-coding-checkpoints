@@ -1,0 +1,122 @@
+button {
+  background: #10487a90;
+  /* background: none repeat scroll 0 0 transparent; */
+  border: 3px medium none;
+  border-spacing: 3;
+  border-radius: 12px;
+  color: #26589f;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.42rem;
+  list-style: none outside none;
+  margin: 0;
+  padding: 3;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+}
+
+.app-main-div {
+  /* margin: auto;
+  text-align: center;
+  justify-content: center; */
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  /* border: 3px solid green; */
+  padding: 10px;
+}
+
+.app-stage {
+  /* align-self: center; */
+  margin: auto;
+  position: relative;
+  background-image: url(./images/curtain-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  border: 5px solid rgba(0, 0, 0, 0.721);
+  /* left: 150px; */
+  width: 900px;
+  top: 50px;
+  height: 600px;
+}
+
+.magic-show-sign {
+  position: absolute;
+  height: 175px;
+  bottom: 10px;
+  right: 30px;
+}
+
+.melvin-himself {
+  position: absolute;
+  height: 300px;
+  bottom: 1px;
+  left: 120px;
+}
+
+.app-bunny-trick {
+  background-image: url(./images/magic-table.png);
+  background-size: cover;
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  bottom: -2px;
+  left: 200px;
+}
+.bunny-trick {
+  position: absolute;
+  height: 80px;
+  left: 70px;
+  top: -40px;
+  transform: scaleX(-1);
+}
+.alakazam {
+  position: absolute;
+  bottom: 225px;
+  left: -90px;
+}
+
+.knife-illusion-main-div{
+  background-image: url(./images/target-background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 300px;
+  height: 600px;
+
+  right: 170px;
+  top: 240px;
+}
+
+.brave-volunteer {
+  position: absolute;
+  height: 150px;
+  top: 40px;
+  left: 50px;
+}
+
+.throwing-machete{
+  position: absolute;
+  height: 130px;
+  width: 200px;
+  transform: rotate(70deg);
+  top:40px;
+  left: -100px;
+}
+
+.volunteer-stand{
+  position: absolute;
+  height: 330px;
+  width: 430px;
+  left: -60px;
+  top: 15px;
+}
+
+.illusion-controls-main-div{
+  position: absolute;
+  bottom: 380px;
+  right: 200px;
+}
