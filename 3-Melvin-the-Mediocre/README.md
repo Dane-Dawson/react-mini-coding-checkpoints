@@ -20,7 +20,7 @@ That being said, all that Melvin has to get us started with is this:
 
 Pulling a rabbit out of a hat is a classic trick, but Melvin has no times for tricks, he's a master of ILLUSIONS! Let's see if we can make it SEEM as though the rabbit and hat switch places instead.
 
-To handle this let's take a look at all the needed pieces. 
+To handle this let's take a look at all the needed pieces inside our `App` component. 
 - There is a `showBunny` state set by default to false. 
 - In the `App` component is an `<img>` with an src set to `hat`. 
 - There is an image that has already been imported at the top of `App` as `bunny`. 
