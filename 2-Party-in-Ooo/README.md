@@ -32,13 +32,15 @@ This should launch our React server on `localhost:3000` and our json-server on `
 
 ## Core Deliverables
 
-- Fetch the array of users from the `db.json` at the `/characters` endpoint and set them in state to `allCharacters`. Then, selecting any 1 character of your choice from that array, set one character object as the `displayCharacter` in state.
+- In the `App` component, fetch the array of users from the `db.json` at the `/characters` endpoint and set them in state to `allCharacters`. 
 
-- Get the `displayCharacter` passed to the `CharacterDisplay` component and get the character information rendered appropriately
+- Selecting any 1 character of your choice from that array, set one character object as the `displayCharacter` in state.
 
-- Get `allCharacters` to create a `CharacterCard` for each character in the `CharacterCardContainer` with the relevent information
+- Get the `displayCharacter` state passed to the `CharacterDisplay` component and get the character information rendered appropriately in the `CharacterDisplay` component.
 
-- Create an event listener that sets a new character to `displayCharacter` every time their `CharacterCard` is clicked.
+- Pass `AllCharacters` into the `CharacterCardContainer`, and us `allCharacters` to create a `CharacterCard` for each character in the `CharacterCardContainer`. This component should be passed the relevent information to display.
+
+- Create an event listener that sets a new character object to `displayCharacter` every time their `CharacterCard` is clicked.
 
 All the locations where data is needed (and what that data should be) are marked with comments. 
 
