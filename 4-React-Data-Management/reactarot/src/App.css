@@ -122,8 +122,18 @@
   bottom: 0;
   overflow-y: scroll;
   height: 20%;
-  line-height: 1.5em;
+  line-height: 1.3em;
   font-size: 1em;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #955d01;
 }
 
 .display-card-info p{
