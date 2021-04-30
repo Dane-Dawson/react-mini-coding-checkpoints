@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
 
 class ForecastCard extends Component {
-
-    componentDidMount(){
-        this.setState({
-            cardInfo: {...this.props.card}
-        })
-    }
     
     render() {
         return (
