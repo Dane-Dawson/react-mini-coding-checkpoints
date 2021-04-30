@@ -16,13 +16,20 @@ class Card extends Component {
     }
 
     render() {
+        let backgroundImage = this.props.flipped ? 
+        `process.env.PUBLIC_URL../../cardImages/${this.state.cardInfo.name_short}.jpg` : 
+        "https://www.aeclectic.net/tarot/cards/_img/original-rider-waite-03806.jpg";
         return(
             <div className="card-wrapper">
-                <div className="card" onClick={() => {
+                <img 
+                src={backgroundImage}
+                className="card" 
+                onClick={() => {
                     this.props.setSelected(this.state.cardInfo)
-                }}>
-                    {/* <p>{this.props.info.name}</p> */}
-                </div>
+                }}
+                alt={this.state.cardInfo.name_short}
+                >
+                </img>
             </div>
         )
     }
